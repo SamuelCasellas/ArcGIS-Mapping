@@ -18,7 +18,7 @@ require([
     "esri/Map", 
     "esri/views/MapView",
 
-    "esri/FeatureLayer"
+    "esri/layers/FeatureLayer"
     ], 
     function (esriConfig, Map, MapView, FeatureLayer) {
     // Basic config
@@ -35,20 +35,22 @@ require([
         container: "viewDiv" // Div element
     });
 
-    // const popupPark = {
-    //     "title": "Parks",
-    //     "content": "<b>Park name:</b> {PARK_NAME}<br><b>Feature Type:</b> {FEATURE_TYPE}<br><b>Area in Sq. Mi</b> {SQ_MI}<br>"
-    // };
+    // THIS DOES NOT WORK
+    const popupPark = {
+        "title": "Parks",
+        "content": "<b>Park name:</b> {PARK_NAME}<br><b>Feature Type:</b> {FEATURE_TYPE}<br><b>Area in Sq. Mi</b> {SQ_MI}<br>"
+    };
 
-    // const parks = new FeatureLayer({
-    //     url: "https://chluyu7llsleoj1k.maps.arcgis.com/sharing/rest/content/items/f092c20803a047cba81fbf1e30eff0b5/info/metadata/metadata.xml?format=default&output=html&token=E0TmT5RGV4TRPL2wyg9dsaraPWUzstdG7rWjupCG57rg1OOdr-60R_20d8FXuIXLXA29iieg05ikO0rxgaaJPFVL0qX4p856RDDdnXatk2-taD9MtQW6Wg2cH8dIY-WfBFIaaMFpXlE-DVXa50XqNPjFUqrc6Awlrql2L_Msl4kDq1uLzOQaFGUXXJxRy9N6p21MhIlo1FG_-xAZsFL9UsJfIFfosRLwQ5hMByhNabA.",
-    //     outFields: ["PARK_NAME", "FEATURE_TYPE", "SQ_MI"],
-    //     popupTemplate: popupPark
-    // });
+    const parks = new FeatureLayer({
+        url: "https://chluyu7llsleoj1k.maps.arcgis.com/sharing/rest/content/items/f092c20803a047cba81fbf1e30eff0b5/info/metadata/metadata.xml?format=default&output=html&token=E0TmT5RGV4TRPL2wyg9dsaraPWUzstdG7rWjupCG57rg1OOdr-60R_20d8FXuIXLXA29iieg05ikO0rxgaaJPFVL0qX4p856RDDdnXatk2-taD9MtQW6Wg2cH8dIY-WfBFIaaMFpXlE-DVXa50XqNPjFUqrc6Awlrql2L_Msl4kDq1uLzOQaFGUXXJxRy9N6p21MhIlo1FG_-xAZsFL9UsJfIFfosRLwQ5hMByhNabA.",
+        outFields: ["PARK_NAME", "FEATURE_TYPE", "SQ_MI"],
+        popupTemplate: popupPark
+    });
 
-    // map.add(parks);
+    map.add(parks);
 
     // // Define a pop-up for Trailheads
+    // This is for pulling from an object of custom maps
     // const popupPark = {
     //     "title": "Parks",
     //     "content": "<b>Park name:</b> {TRL_NAME}<br><b>City:</b> {CITY_JUR}<br><b>Cross Street:</b> {X_STREET}<br><b>Parking:</b> {PARKING}<br><b>Elevation:</b> {ELEV_FT} ft"
