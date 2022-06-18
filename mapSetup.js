@@ -38,12 +38,12 @@ require([
     // THIS DOES NOT WORK
     const popupPark = {
         "title": "Parks",
-        "content": "<b>Park name:</b> {PARK_NAME}<br><b>Feature Type:</b> {FEATURE_TYPE}<br><b>Area in Sq. Mi</b> {SQ_MI}<br>"
+        "content": "<b>Park name:</b> {Park_Name}<br><b>Feature Type:</b> {Directions}<br>"
     };
 
     const parks = new FeatureLayer({
-        url: "https://chluyu7llsleoj1k.maps.arcgis.com/sharing/rest/content/items/f092c20803a047cba81fbf1e30eff0b5/info/metadata/metadata.xml?format=default&output=html&token=E0TmT5RGV4TRPL2wyg9dsaraPWUzstdG7rWjupCG57rg1OOdr-60R_20d8FXuIXLXA29iieg05ikO0rxgaaJPFVL0qX4p856RDDdnXatk2-taD9MtQW6Wg2cH8dIY-WfBFIaaMFpXlE-DVXa50XqNPjFUqrc6Awlrql2L_Msl4kDq1uLzOQaFGUXXJxRy9N6p21MhIlo1FG_-xAZsFL9UsJfIFfosRLwQ5hMByhNabA.",
-        outFields: ["PARK_NAME", "FEATURE_TYPE", "SQ_MI"],
+        url: "https://services8.arcgis.com/YY0zev9RpFX809lW/arcgis/rest/services/Parks_in_IF/FeatureServer",
+        outFields: ["Park_Name", "Directions"],
         popupTemplate: popupPark
     });
 
