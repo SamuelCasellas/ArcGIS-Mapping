@@ -35,10 +35,9 @@ require([
         container: "viewDiv" // Div element
     });
 
-    // THIS DOES NOT WORK
     const popupPark = {
         "title": "Parks",
-        "content": "<b>Park name:</b> {Park_Name}<br><b>Feature Type:</b> {Directions}<br>"
+        "content": "<b>Park name:</b> {Park_Name}<br><b>Address:</b> {Directions}<br>"
     };
 
     const parks = new FeatureLayer({
@@ -49,22 +48,4 @@ require([
 
     map.add(parks);
 
-    // // Define a pop-up for Trailheads
-    // This is for pulling from an object of custom maps
-    // const popupPark = {
-    //     "title": "Parks",
-    //     "content": "<b>Park name:</b> {TRL_NAME}<br><b>City:</b> {CITY_JUR}<br><b>Cross Street:</b> {X_STREET}<br><b>Parking:</b> {PARKING}<br><b>Elevation:</b> {ELEV_FT} ft"
-    // };
-
-    // // How to add from an object?
-    // const trailheads = new FeatureLayer({
-    //     url: "https://services3.arcgis.com/GVgbJbqm8hXASVYi/arcgis/rest/services/Trailheads_Styled/FeatureServer/0",
-    //     outFields: ["TRL_NAME","CITY_JUR","X_STREET","PARKING","ELEV_FT"],
-    //     popupTemplate: popupPark
-    // });
-
-    // map.add(trailheads);
-
-
-    
 });
