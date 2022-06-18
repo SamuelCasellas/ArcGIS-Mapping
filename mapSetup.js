@@ -1,5 +1,7 @@
 const API_KEY = "AAPK321d61bd8cb64adcaf742d6cdb358ccdCXO2JrGUFiZl0PQvgiRgB1wGhZCRKBqE5xirtn9bSIMdlfdsRnmH33XiIBVB2JfN";
 
+const IDAHO_PARKS_FEATURE_LAYER_URL = "https://services8.arcgis.com/YY0zev9RpFX809lW/arcgis/rest/services/Parks_in_IF/FeatureServer/0";
+
 // const IF_PARKS = [{"ID":"1",
 //                    "Name":"20th Street Park",
 //                    "Latitude":"43.47998046752",
@@ -41,7 +43,7 @@ require([
     };
 
     const parks = new FeatureLayer({
-        url: "https://services8.arcgis.com/YY0zev9RpFX809lW/arcgis/rest/services/Parks_in_IF/FeatureServer",
+        url: IDAHO_PARKS_FEATURE_LAYER_URL,
         outFields: ["Park_Name", "Directions"],
         popupTemplate: popupPark
     });
