@@ -1,25 +1,34 @@
-# ArcGIS-Mapping
-Showcase all of the different parks in the Rexburg/Idaho Falls locations
-
 # Overview
 
-Here I decided to figure out how to use another rest api endpoint with a token accessed by ArcGIS to understand how to configure a map in the web.
+(Talk about what I am trying to accomplish as a software engineer to further Ir learning.)
 
-[Software Demo Video](https://youtu.be/5l7YD2yiit4)
+(Provide a description the web app that I wrote. Describe how to start a test server on my computer and what website to open up to see the first page of the app.)
+
+(Describe my purpose for writing this software.)
+
+(Provide a link to my YouTube demonstration.  It should be a 4-5 minute demo of the software running (starting the server and navigating through the web pages) and a walkthrough of the code.)
+
+[Software Demo Video](http://youtube.link.goes.here)
+
+# Web Pages
+
+(Describe each of the web pages I created and how the web app transitions between each of them.  Also describe what is dynamically created on each page.)
 
 # Development Environment
 
-I used the ArcGis library along with javascript and HTML to display the map in the browser.
+(Describe the tools that I used to develop the software)
+
+(Describe the programming language that I used and any libraries.)
 
 # Useful Websites
 
 (Make a list of websites that I found helpful in this project)
-* [ArcGis Website: Creating a feature Layer](https://developers.arcgis.com/documentation/mapping-apis-and-services/data-hosting/tutorials/tools/create-a-new-feature-layer/#add-data)
-* [Display a map](https://developers.arcgis.com/javascript/latest/display-a-map/)
-* [Idaho Falls Parks Map](https://www.idahofallsidaho.gov/Facilities?clear=False)
+* [Web Site Name](http://url.link.goes.here)
+* [Web Site Name](http://url.link.goes.here)
 
 # Future Work
 
-* Add a filter for the markers based on altitude
-* Add some more feature layers
-* Have a legend that shows the different locations in IF, such as schools and churchers
+(Make a list of things that I need to fix, improve, and add in the future.)
+* Item 1
+* Item 2
+* Item 3
