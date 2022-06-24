@@ -1,6 +1,6 @@
 # Overview
 
-(Talk about what I am trying to accomplish as a software engineer to further Ir learning.)
+(Talk about what I am trying to accomplish as a software engineer to further my learning.)
 
 (Provide a description the web app that I wrote. Describe how to start a test server on my computer and what website to open up to see the first page of the app.)
 
